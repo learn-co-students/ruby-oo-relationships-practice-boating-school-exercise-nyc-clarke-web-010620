@@ -1,5 +1,8 @@
+require "pry"
 require_relative '../config/environment.rb'
-
+require_relative './student.rb'
+require_relative './instructor.rb'
+require_relative './boatingtest.rb'
 def reload
   load 'config/environment.rb'
 end
