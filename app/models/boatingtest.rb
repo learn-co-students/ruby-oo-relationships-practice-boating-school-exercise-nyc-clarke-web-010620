@@ -1,18 +1,19 @@
 class BoatingTest
-    attr_accessor 
+    attr_accessor :name, :grade
     attr_reader :instructor, :student 
 
     @@all = []
     
-    def initialize(instructor, student)
+    def initialize(instructor, student, name, grade = 'pending')
         @instructor = instructor
         @student = student         
-        # @instructor = instructor
+        @grade = grade
+        @name = name
         @@all << self
     end
 
     def self.all
         @@all
     end
-    
+
 end
